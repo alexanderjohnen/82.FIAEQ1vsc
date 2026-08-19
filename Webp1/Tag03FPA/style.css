@@ -1,18 +1,7 @@
 body {
+  margin-right: 8px;
+  margin-left: 8px;
   overflow-x: hidden;
-}
-
-h1 {
-    background-color: blue;
-    margin-left: -8px;
-    margin-right: -8px;
-    margin-top: -8px;
-    margin-bottom: 0px;
-    padding-left: 8px;
-    padding-right: 8px;
-    padding-top: 14px;
-    padding-bottom: 14px;
-    color: white;
 }
 
 .navbar li:first-child {
@@ -26,7 +15,7 @@ h1 {
   bottom: 0;
   right: 100%;
   width: 100vw;  
-  background-color: red;
+  background-color: rgb(199,33,56);
 }
 
 .navbar li:last-child {
@@ -40,7 +29,7 @@ h1 {
   bottom: 0;
   left: 100%;
   width: 100vw;
-  background-color: yellow;
+  background-color: rgb(48,76,122);;
 }
 
 .navbar {
@@ -49,6 +38,7 @@ h1 {
   z-index: 1000;
   margin-left: -8px;
   margin-right: -8px;
+  margin-top: -8px;
 }
 
 .navbar ul {

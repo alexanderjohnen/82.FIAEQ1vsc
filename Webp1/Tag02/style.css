@@ -1,0 +1,24 @@
+* {
+  margin: 0px;
+}
+
+hr {
+  margin: 10px 0px 10px 0px;
+}
+
+body {
+    background-color: aqua;
+}
+
+.hinweis {
+  background-color: blueviolet;
+}
+
+.wichtig {
+  color: white;
+  background-color: black;
+}
+
+.whyCoffe{
+    margin: 20px;
+}

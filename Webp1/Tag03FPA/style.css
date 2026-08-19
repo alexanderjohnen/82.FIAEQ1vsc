@@ -1,0 +1,89 @@
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+    background-color: blue;
+    margin-left: -8px;
+    margin-right: -8px;
+    margin-top: -8px;
+    margin-bottom: 0px;
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    color: white;
+}
+
+.navbar li:first-child {
+  position: relative;
+}
+
+.navbar li:first-child::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 100%;
+  width: 100vw;  
+  background-color: red;
+}
+
+.navbar li:last-child {
+  position: relative;
+}
+
+.navbar li:last-child::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  width: 100vw;
+  background-color: yellow;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  margin-left: -8px;
+  margin-right: -8px;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+}
+
+.navbar a {
+  display: block;
+  text-decoration: none;
+  padding: 14px 14px;
+}
+
+.navbar a:hover{
+    text-decoration: underline;
+}
+
+#tools,
+#portfolio,
+#gallery {
+    margin-top: 30px;
+  scroll-margin-top: 60px;
+}
+
+#portfolio a{
+    text-decoration: none;
+    color: black;
+}
+
+#portfolio a:hover{
+    color:red;
+}
+
+img {
+  height: 321px;
+  width: 575px;
+}

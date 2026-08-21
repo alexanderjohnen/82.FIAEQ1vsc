@@ -1,0 +1,71 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.flexcontainer {
+  width: 90%;
+  height: 500px;
+  margin: 2rem auto; /* 1rem = 16px, egal wo im DOM */
+  padding: 1rem;
+  border: 2px solid black;
+  background-color: silver;
+  display: flex; /* macht die Boxen nebeneinander (art1, art2, art3) */
+  flex-direction: column; /* Standard - Waagerecht */
+  flex-wrap: wrap; /* Umbruch erlauben */
+  justify-content: center; /* Abstände zwischen (art1, art2, art3) */
+  align-items: center;
+}
+
+.art1,
+.art2,
+.art3 {
+  width: 250px;
+  background-color: beige;
+  border: 2px solid blue;
+  padding: 13px;
+}
+
+.art1 {
+  flex: 1;
+  order: 3;
+}
+
+.art2 {
+  flex: 2; /* Doppelter Platzanteil */
+  order: 1; /* Bestimmt die Plätze */
+}
+
+.art3 {
+  flex: 1;
+  order: 2;
+}
+
+/* Perfekte Zentrierung */
+.wrapper {
+  border: 2px solid black;
+  max-width: 35em;
+  height: 15em;
+  background-color: silver;
+  margin: 0 auto;
+  display: flex;
+}
+
+.wrapper h1 {
+  margin: auto; /* Zentriert horizontal UND Vertikal */
+}
+
+/* Einen Menüpunkt nach rechts drücken */
+nav ul {
+  display: flex;
+  list-style-type: none;
+}
+
+/*.nach-rechts {
+  margin-left: auto; Schiebt genau dieses Item ganz nach rechts
+} */
+
+.liright {
+  margin-right: auto;
+}

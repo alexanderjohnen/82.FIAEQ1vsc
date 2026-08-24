@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>PizzaBude</title>
+  </head>
+  <body>
+    <!-- Radio-Buttons für die Steuerung -->
+    <input class="v-radio" type="radio" name="view" id="view_salate" checked />
+    <input class="v-radio" type="radio" name="view" id="view_pizzas" />
+    <input class="v-radio" type="radio" name="view" id="view_snacks" />
+    <input class="v-radio" type="radio" name="view" id="view_desserts" />
+    <input class="v-radio" type="radio" name="view" id="view_getraenke" />
+
+    <div class="app">
+      <header class="topbar">
+        <div class="brand">
+          <img
+            class="brand_logo"
+            src="pizza_bude_assets_complete/startseite/logo_icon.png"
+            alt="Logo"
+          />
+          <strong>MARVINS PIZZA BUDE</strong>
+          <small>Knusprig. Frisch. Lecker.</small>
+        </div>
+        <nav class="tabs">
+          <label class="tab" for="view_salate">Salate</label>
+          <label class="tab" for="view_pizzas">Pizzen</label>
+          <label class="tab" for="view_snacks">Snacks</label>
+          <label class="tab" for="view_desserts">Desserts</label>
+          <label class="tab" for="view_getraenke">Getränke</label>
+        </nav>
+      </header>
+
+      <!-- Sektionen mit Platzhalter-Texten -->
+      <section class="panel panel-salate salat-bild"></section>
+
+      <section class="panel panel-pizzas pizzen-bild"></section>
+
+      <section class="panel panel-snacks snacks-bild"></section>
+
+      <section class="panel panel-desserts dessert-bild"></section>
+
+      <section class="panel panel-getraenke getraenke-bild"></section>
+    </div>
+  </body>
+</html>

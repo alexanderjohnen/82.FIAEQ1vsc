@@ -4,17 +4,18 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>PizzaBude</title>
+    <title>Marvins Pizza Bude</title>
   </head>
   <body>
-    <!-- Radio-Buttons für die Steuerung -->
-    <input class="v-radio" type="radio" name="view" id="view_salate" checked />
-    <input class="v-radio" type="radio" name="view" id="view_pizzas" />
+    <!-- Radio-Buttons für die Tab-Steuerung (Rein CSS) -->
+    <input class="v-radio" type="radio" name="view" id="view_salate" />
+    <input class="v-radio" type="radio" name="view" id="view_pizzas" checked />
     <input class="v-radio" type="radio" name="view" id="view_snacks" />
     <input class="v-radio" type="radio" name="view" id="view_desserts" />
     <input class="v-radio" type="radio" name="view" id="view_getraenke" />
 
     <div class="app">
+      <!-- Header Navigation -->
       <header class="topbar">
         <div class="brand">
           <img
@@ -22,8 +23,10 @@
             src="pizza_bude_assets_complete/startseite/logo_icon.png"
             alt="Logo"
           />
-          <strong>MARVINS PIZZA BUDE</strong>
-          <small>Knusprig. Frisch. Lecker.</small>
+          <div class="brand-text">
+            <strong>MARVINS PIZZA BUDE</strong>
+            <small>Knusprig. Frisch. Lecker.</small>
+          </div>
         </div>
         <nav class="tabs">
           <label class="tab" for="view_salate">Salate</label>
@@ -34,16 +37,387 @@
         </nav>
       </header>
 
-      <!-- Sektionen mit Platzhalter-Texten -->
-      <section class="panel panel-salate salat-bild"></section>
+      <!-- TAB: SALATE -->
+      <section class="panel panel-salate">
+        <div class="panel-banner salat-bild"></div>
+        <div class="layout-grid">
+          <div class="product-grid">
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/salate/salat_bauernsalat.jpg" alt="Bauernsalat" />
+              <div class="card-body">
+                <h3>Bauernsalat</h3>
+                <p>Klassisch mit Hirtenkäse, Oliven & Tomaten</p>
+                <div class="card-footer">
+                  <span class="price">8 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/salate/salat_haehnchen.jpg" alt="Hähnchensalat" />
+              <div class="card-body">
+                <h3>Hähnchensalat</h3>
+                <p>Gegrillte Hähnchenbruststreifen auf Blattsalat</p>
+                <div class="card-footer">
+                  <span class="price">9 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/salate/salat_thunfisch.jpg" alt="Thunfischsalat" />
+              <div class="card-body">
+                <h3>Thunfischsalat</h3>
+                <p>Mit saftigem Thunfisch & Zwiebeln</p>
+                <div class="card-footer">
+                  <span class="price">8 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-      <section class="panel panel-pizzas pizzen-bild"></section>
+          <aside class="cart-sidebar">
+            <div class="cart-badge-img">
+              <img src="pizza_bude_assets_complete/startseite/button_warenkorb.jpg" alt="Zum Warenkorb" />
+            </div>
+            <div class="cart-box">
+              <div class="cart-empty-msg">Dein Warenkorb ist leer.</div>
+              <div class="cart-info-row">
+                <span>Artikel</span>
+                <strong class="cart-count">0</strong>
+              </div>
+              <hr class="cart-divider" />
+              <div class="cart-info-row cart-total">
+                <strong>Zwischensumme</strong>
+                <strong class="cart-total-price">0 €</strong>
+              </div>
+              <button class="btn btn-checkout" disabled>BESTELLUNG ABSCHLIESSEN</button>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-      <section class="panel panel-snacks snacks-bild"></section>
+      <!-- TAB: PIZZEN -->
+      <section class="panel panel-pizzas">
+        <div class="panel-banner pizzen-bild"></div>
+        <div class="layout-grid">
+          <div class="product-grid">
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/pizzas/pizza_marvin_special.jpg" alt="Marvins Special" />
+              <div class="card-body">
+                <h3>Marvins Special</h3>
+                <p>Salami, Peperoni & extra Käse</p>
+                <div class="card-footer">
+                  <span class="price">11 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/pizzas/pizza_cheesy_love.jpg" alt="Cheesy Love" />
+              <div class="card-body">
+                <h3>Cheesy Love</h3>
+                <p>Vier Sorten Käse, richtig cheesy</p>
+                <div class="card-footer">
+                  <span class="price">10 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/pizzas/pizza_hot_chili.jpg" alt="Hot Chili" />
+              <div class="card-body">
+                <h3>Hot Chili</h3>
+                <p>Scharf mit Jalapeños & Chili</p>
+                <div class="card-footer">
+                  <span class="price">10 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/pizzas/pizza_veggie_power.jpg" alt="Veggie Power" />
+              <div class="card-body">
+                <h3>Veggie Power</h3>
+                <p>Frisches Gemüse der Saison</p>
+                <div class="card-footer">
+                  <span class="price">9 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+          </div>
 
-      <section class="panel panel-desserts dessert-bild"></section>
+          <aside class="cart-sidebar">
+            <div class="cart-badge-img">
+              <img src="pizza_bude_assets_complete/startseite/button_warenkorb.jpg" alt="Zum Warenkorb" />
+            </div>
+            <div class="cart-box">
+              <div class="cart-empty-msg">Dein Warenkorb ist leer.</div>
+              <div class="cart-info-row">
+                <span>Artikel</span>
+                <strong class="cart-count">0</strong>
+              </div>
+              <hr class="cart-divider" />
+              <div class="cart-info-row cart-total">
+                <strong>Zwischensumme</strong>
+                <strong class="cart-total-price">0 €</strong>
+              </div>
+              <button class="btn btn-checkout" disabled>BESTELLUNG ABSCHLIESSEN</button>
+            </div>
+          </aside>
+        </div>
+      </section>
 
-      <section class="panel panel-getraenke getraenke-bild"></section>
+      <!-- TAB: SNACKS -->
+      <section class="panel panel-snacks">
+        <div class="panel-banner snacks-bild"></div>
+        <div class="layout-grid">
+          <div class="product-grid">
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/snacks/snack_chicken_nuggets.jpg" alt="Chicken Nuggets" />
+              <div class="card-body">
+                <h3>Chicken Nuggets</h3>
+                <p>Knusprige Hähnchen-Nuggets mit Dip</p>
+                <div class="card-footer">
+                  <span class="price">5 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/snacks/snack_chicken_wings.jpg" alt="Chicken Wings" />
+              <div class="card-body">
+                <h3>Chicken Wings</h3>
+                <p>Würzig marinierte Chicken Wings</p>
+                <div class="card-footer">
+                  <span class="price">6 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/snacks/snack_knoblauchbrot.jpg" alt="Knoblauchbrot" />
+              <div class="card-body">
+                <h3>Knoblauchbrot</h3>
+                <p>Knusprig gebacken mit Kräuterbutter</p>
+                <div class="card-footer">
+                  <span class="price">4 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/snacks/snack_mozzarella_sticks.jpg" alt="Mozzarella Sticks" />
+              <div class="card-body">
+                <h3>Mozzarella Sticks</h3>
+                <p>Paniert mit schmelzendem Käsekern</p>
+                <div class="card-footer">
+                  <span class="price">5 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/snacks/snack_pommes.jpg" alt="Pommes" />
+              <div class="card-body">
+                <h3>Pommes Frites</h3>
+                <p>Goldgelb und knusprig frittiert</p>
+                <div class="card-footer">
+                  <span class="price">3 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="cart-sidebar">
+            <div class="cart-badge-img">
+              <img src="pizza_bude_assets_complete/startseite/button_warenkorb.jpg" alt="Zum Warenkorb" />
+            </div>
+            <div class="cart-box">
+              <div class="cart-empty-msg">Dein Warenkorb ist leer.</div>
+              <div class="cart-info-row">
+                <span>Artikel</span>
+                <strong class="cart-count">0</strong>
+              </div>
+              <hr class="cart-divider" />
+              <div class="cart-info-row cart-total">
+                <strong>Zwischensumme</strong>
+                <strong class="cart-total-price">0 €</strong>
+              </div>
+              <button class="btn btn-checkout" disabled>BESTELLUNG ABSCHLIESSEN</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- TAB: DESSERTS -->
+      <section class="panel panel-desserts">
+        <div class="panel-banner desserts-bild"></div>
+        <div class="layout-grid">
+          <div class="product-grid">
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/desserts/dessert_apfelstrudel.jpg" alt="Apfelstrudel" />
+              <div class="card-body">
+                <h3>Apfelstrudel</h3>
+                <p>Warmer Apfelstrudel mit Zimt & Zucker</p>
+                <div class="card-footer">
+                  <span class="price">4 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/desserts/dessert_ice_cream.jpg" alt="Ice Cream" />
+              <div class="card-body">
+                <h3>Eisbecher</h3>
+                <p>Cremiges Schokoeis im Becher</p>
+                <div class="card-footer">
+                  <span class="price">4 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/desserts/dessert_schoko_brownie.jpg" alt="Schoko Brownie" />
+              <div class="card-body">
+                <h3>Schoko Brownie</h3>
+                <p>Saftiger Schokoladenkuchen</p>
+                <div class="card-footer">
+                  <span class="price">4 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/desserts/dessert_tiramisu.jpg" alt="Tiramisu" />
+              <div class="card-body">
+                <h3>Tiramisu</h3>
+                <p>Klassisch italienisch mit Mascarpone & Espresso</p>
+                <div class="card-footer">
+                  <span class="price">5 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="cart-sidebar">
+            <div class="cart-badge-img">
+              <img src="pizza_bude_assets_complete/startseite/button_warenkorb.jpg" alt="Zum Warenkorb" />
+            </div>
+            <div class="cart-box">
+              <div class="cart-empty-msg">Dein Warenkorb ist leer.</div>
+              <div class="cart-info-row">
+                <span>Artikel</span>
+                <strong class="cart-count">0</strong>
+              </div>
+              <hr class="cart-divider" />
+              <div class="cart-info-row cart-total">
+                <strong>Zwischensumme</strong>
+                <strong class="cart-total-price">0 €</strong>
+              </div>
+              <button class="btn btn-checkout" disabled>BESTELLUNG ABSCHLIESSEN</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- TAB: GETRÄNKE -->
+      <section class="panel panel-getraenke">
+        <div class="panel-banner getraenke-bild"></div>
+        <div class="layout-grid">
+          <div class="product-grid">
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/getraenke/getraenk_coca_cola.jpg" alt="Coca Cola" />
+              <div class="card-body">
+                <h3>Coca Cola 0.5l</h3>
+                <p>Eiskalt serviert</p>
+                <div class="card-footer">
+                  <span class="price">3 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/getraenke/getraenk_coca_zero.jpg" alt="Coca Cola Zero" />
+              <div class="card-body">
+                <h3>Coca Cola Zero 0.5l</h3>
+                <p>Voller Geschmack, ohne Zucker</p>
+                <div class="card-footer">
+                  <span class="price">3 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/getraenke/getraenk_fanta.jpg" alt="Fanta" />
+              <div class="card-body">
+                <h3>Fanta 0.5l</h3>
+                <p>Fruchtiger Orangengeschmack</p>
+                <div class="card-footer">
+                  <span class="price">3 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/getraenke/getraenk_sprite.jpg" alt="Sprite" />
+              <div class="card-body">
+                <h3>Sprite 0.5l</h3>
+                <p>Erfrischender Zitronen-Limetten-Geschmack</p>
+                <div class="card-footer">
+                  <span class="price">3 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+            <article class="card">
+              <img class="card-img" src="pizza_bude_assets_complete/marvins_pizza_bude_assets/getraenke/getraenk_wasser.jpg" alt="Mineralwasser" />
+              <div class="card-body">
+                <h3>Mineralwasser 0.5l</h3>
+                <p>Erfrischend mit Kohlensäure</p>
+                <div class="card-footer">
+                  <span class="price">2 €</span>
+                  <a href="#" class="btn-add">+ Hinzufügen</a>
+                </div>
+              </div>
+            </article>
+          </div>
+
+          <aside class="cart-sidebar">
+            <div class="cart-badge-img">
+              <img src="pizza_bude_assets_complete/startseite/button_warenkorb.jpg" alt="Zum Warenkorb" />
+            </div>
+            <div class="cart-box">
+              <div class="cart-empty-msg">Dein Warenkorb ist leer.</div>
+              <div class="cart-info-row">
+                <span>Artikel</span>
+                <strong class="cart-count">0</strong>
+              </div>
+              <hr class="cart-divider" />
+              <div class="cart-info-row cart-total">
+                <strong>Zwischensumme</strong>
+                <strong class="cart-total-price">0 €</strong>
+              </div>
+              <button class="btn btn-checkout" disabled>BESTELLUNG ABSCHLIESSEN</button>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- Info Footer-Banner -->
+      <footer class="info-footer">
+        <div class="info-badges">
+          <img src="pizza_bude_assets_complete/startseite/info_frische_zutaten.jpg" alt="Frische Zutaten" />
+          <img src="pizza_bude_assets_complete/startseite/info_mit_liebe_gemacht.jpg" alt="Mit Liebe gemacht" />
+          <img src="pizza_bude_assets_complete/startseite/info_schnell_geliefert.jpg" alt="Schnell geliefert" />
+          <img src="pizza_bude_assets_complete/startseite/info_lieferzeit.jpg" alt="Lieferzeit" />
+          <img src="pizza_bude_assets_complete/startseite/info_zahlung.jpg" alt="Zahlungsmethoden" />
+        </div>
+      </footer>
     </div>
   </body>
 </html>
